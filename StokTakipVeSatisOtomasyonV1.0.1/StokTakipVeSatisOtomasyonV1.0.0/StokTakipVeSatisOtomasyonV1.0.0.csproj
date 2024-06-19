@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6D07FED7-396D-4045-BA46-8D2118108828}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>StokTakipVeSatisOtomasyonV1._0._0</RootNamespace>
+    <AssemblyName>StokTakipVeSatisOtomasyonV1.0.0</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>6802161_astronomy_balck hole_galaxy_research_science_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="arayuz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="arayuz.Designer.cs">
+      <DependentUpon>arayuz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="firma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="firma.Designer.cs">
+      <DependentUpon>firma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullanici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullanici.Designer.cs">
+      <DependentUpon>kullanici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciGirisi.Designer.cs">
+      <DependentUpon>KullaniciGirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullaniciTürü.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullaniciTürü.Designer.cs">
+      <DependentUpon>kullaniciTürü.cs</DependentUpon>
+    </Compile>
+    <Compile Include="log.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="log.Designer.cs">
+      <DependentUpon>log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteri.Designer.cs">
+      <DependentUpon>musteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="satis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satis.Designer.cs">
+      <DependentUpon>satis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sifreDegistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sifreDegistir.Designer.cs">
+      <DependentUpon>sifreDegistir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stok.Designer.cs">
+      <DependentUpon>stok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="urun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="urun.Designer.cs">
+      <DependentUpon>urun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="urunKategori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="urunKategori.Designer.cs">
+      <DependentUpon>urunKategori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Veritabani.cs" />
+    <Compile Include="zayi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zayi.Designer.cs">
+      <DependentUpon>zayi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="arayuz.resx">
+      <DependentUpon>arayuz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="firma.resx">
+      <DependentUpon>firma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullanici.resx">
+      <DependentUpon>kullanici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciGirisi.resx">
+      <DependentUpon>KullaniciGirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullaniciTürü.resx">
+      <DependentUpon>kullaniciTürü.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="log.resx">
+      <DependentUpon>log.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteri.resx">
+      <DependentUpon>musteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="satis.resx">
+      <DependentUpon>satis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sifreDegistir.resx">
+      <DependentUpon>sifreDegistir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stok.resx">
+      <DependentUpon>stok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="urun.resx">
+      <DependentUpon>urun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="urunKategori.resx">
+      <DependentUpon>urunKategori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zayi.resx">
+      <DependentUpon>zayi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x-23-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy %281%291.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\güzel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stok Takip-logos_transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yunongtong-change-login-password-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\full-m2i8N4Z5A0N4m2Z5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-5-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart-7-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart-75-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\organization-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sell-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-window-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock-10-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\available-updates-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recurring-appointment-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="6802161_astronomy_balck hole_galaxy_research_science_icon.ico" />
+    <None Include="Resources\pngwing.com.png" />
+    <None Include="Resources\pngwing.bmp" />
+    <None Include="Resources\view %281%29.png" />
+    <None Include="Resources\eye-password.png" />
+    <None Include="Resources\eye-password %281%29.png" />
+    <None Include="Resources\eye-password %282%29.png" />
+    <None Include="Resources\arrow-59-32.png" />
+    <None Include="Resources\view.png" />
+    <None Include="Resources\available-updates-161.png" />
+    <None Include="Resources\recurring-appointment-16.png" />
+    <None Include="Resources\available-updates-16.png" />
+    <None Include="Resources\delete-16.png" />
+    <None Include="Resources\add-16.png" />
+    <None Include="Resources\add-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 ve x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
